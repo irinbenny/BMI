@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(18, 18, 27);
+}
+ h2,h3{
+  color: #fff;
+ }
+.container {
+  box-shadow: 0px 0px 12px #0c0b0b;
+  border-radius: 20px;
+  padding: 3rem;
+  background-color: rgb(36, 36, 41);
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.image img{
+  height: 320px;
+  width: 320px;
+  margin-top: -10px;
+
+}
+.forms{
+  margin-top: 60px;
+}
+label{
+color:white;
+}
+input {
+  padding: 10px;
+ /*  border: 1px solid rgb(255, 255, 255); */
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(24, 24, 28);
+  color: rgb(229, 238, 233);
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: none;
+
+}
+ 
+.button{
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  display: block;
+  width: 40%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 7px 0;
+  background-color: rgb(18, 18, 27);
+  box-shadow: 0px 0px 12px #1d1616;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+}
+/* unvisited link */
+ 
+.btn-outline {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px #8d7c7c57;
+  color: #6c8bb7;
+}
+ 
+.center {
+  text-align: center;
+  margin: 24px 0;
+  color: #fff;
+}
+ 
+p {
+  margin: 10px 0;
+}
+ 
+.img-container {
+  text-align: center;
+}
+@media only screen and (max-width: 550px) {
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .app{
+    height: 170vh;
+    width: 160%;
+  }
+  .image img{
+    width: 150px;
+  }
+  .forms{
+    margin-top: 1px;
+  }
+  }
+  @media only screen and (max-width: 250px) {
+    .main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .app{
+      height: 170vh;
+      width: 160%;
+    }
+    .image img{
+      width: 150px;
+    }
+    .forms{
+      margin-top: 1px;
+    }
+    .btn{
+      font-size:0.7rem;
+    }
+    }
