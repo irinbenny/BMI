@@ -120,10 +120,6 @@ p {
       justify-content: center;
       flex-direction: column;
     }
-    .app{
-      height: 170vh;
-      width: 160%;
-    }
     .image img{
       width: 150px;
     }
